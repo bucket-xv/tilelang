@@ -107,6 +107,7 @@ def compile_cuda(code, target_format="ptx", arch=None, options=None, path_target
     (out, _) = proc.communicate()
 
     if verbose:
+        print(cmd)
         print(py_str(out))
 
     if proc.returncode != 0:
